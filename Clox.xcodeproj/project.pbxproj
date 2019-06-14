@@ -13,6 +13,8 @@
 		FA3A16A122B21BCB00B83034 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3A16A022B21BCB00B83034 /* debug.c */; };
 		FA3A16A422B21D8E00B83034 /* value.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3A16A322B21D8E00B83034 /* value.c */; };
 		FA3D2BDC22B321F80090C575 /* vm.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3D2BDB22B321F80090C575 /* vm.c */; };
+		FA3D2BDF22B359E00090C575 /* compiler.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3D2BDE22B359E00090C575 /* compiler.c */; };
+		FA3D2BE222B35A290090C575 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3D2BE122B35A290090C575 /* scanner.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,10 @@
 		FA3A16A322B21D8E00B83034 /* value.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = value.c; sourceTree = "<group>"; };
 		FA3D2BDA22B321F80090C575 /* vm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vm.h; sourceTree = "<group>"; };
 		FA3D2BDB22B321F80090C575 /* vm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vm.c; sourceTree = "<group>"; };
+		FA3D2BDD22B359E00090C575 /* compiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = compiler.h; sourceTree = "<group>"; };
+		FA3D2BDE22B359E00090C575 /* compiler.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = compiler.c; sourceTree = "<group>"; };
+		FA3D2BE022B35A290090C575 /* scanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scanner.h; sourceTree = "<group>"; };
+		FA3D2BE122B35A290090C575 /* scanner.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scanner.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +91,14 @@
 				FA3A169A22B2143D00B83034 /* chunk.c */,
 				FA3A169922B2143D00B83034 /* chunk.h */,
 				FA3A169822B2138E00B83034 /* common.h */,
+				FA3D2BDE22B359E00090C575 /* compiler.c */,
+				FA3D2BDD22B359E00090C575 /* compiler.h */,
 				FA3A16A022B21BCB00B83034 /* debug.c */,
 				FA3A169F22B21BCB00B83034 /* debug.h */,
 				FA3A169D22B216EE00B83034 /* memory.c */,
 				FA3A169C22B216EE00B83034 /* memory.h */,
+				FA3D2BE122B35A290090C575 /* scanner.c */,
+				FA3D2BE022B35A290090C575 /* scanner.h */,
 				FA3A16A322B21D8E00B83034 /* value.c */,
 				FA3A16A222B21D8E00B83034 /* value.h */,
 				FA3D2BDB22B321F80090C575 /* vm.c */,
@@ -157,6 +167,8 @@
 				FA3A169222B2134500B83034 /* main.c in Sources */,
 				FA3A169E22B216EE00B83034 /* memory.c in Sources */,
 				FA3A169B22B2143D00B83034 /* chunk.c in Sources */,
+				FA3D2BE222B35A290090C575 /* scanner.c in Sources */,
+				FA3D2BDF22B359E00090C575 /* compiler.c in Sources */,
 				FA3D2BDC22B321F80090C575 /* vm.c in Sources */,
 				FA3A16A122B21BCB00B83034 /* debug.c in Sources */,
 			);
