@@ -9,6 +9,13 @@
 #ifndef memory_h
 #define memory_h
 
+#include "object.h"
+
+#define ALLOCATE(type, count) \
+    (type*)reallocate(NULL, 0, sizeof(type) * (count))
+
+#define FREE(type, pointer) \
+    reallocate(pointer, sizeof(type), 0)
 
 
 #define CLOX_MIN_CAPACITY 8
@@ -22,5 +29,6 @@
     reallocate(pointer, sizeof(type) * (oldCount), 0)
 
 void *reallocate(void *previous, size_t oldSize, size_t newSize);
+void freeObjects(void);
 
 #endif /* memory_h */
