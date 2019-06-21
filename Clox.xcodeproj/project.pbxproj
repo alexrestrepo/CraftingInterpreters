@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA106CE222B499AF0086B876 /* object.c in Sources */ = {isa = PBXBuildFile; fileRef = FA106CE122B499AF0086B876 /* object.c */; };
+		FA106CFB22BC8DD70086B876 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = FA106CFA22BC8DD70086B876 /* table.c */; };
 		FA3A169222B2134500B83034 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3A169122B2134500B83034 /* main.c */; };
 		FA3A169B22B2143D00B83034 /* chunk.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3A169A22B2143D00B83034 /* chunk.c */; };
 		FA3A169E22B216EE00B83034 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3A169D22B216EE00B83034 /* memory.c */; };
@@ -33,6 +34,8 @@
 /* Begin PBXFileReference section */
 		FA106CE022B499AF0086B876 /* object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
 		FA106CE122B499AF0086B876 /* object.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = object.c; sourceTree = "<group>"; };
+		FA106CF922BC8DD70086B876 /* table.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		FA106CFA22BC8DD70086B876 /* table.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = table.c; sourceTree = "<group>"; };
 		FA3A168E22B2134500B83034 /* Clox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Clox; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3A169122B2134500B83034 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		FA3A169822B2138E00B83034 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
@@ -95,15 +98,17 @@
 				FA3A169922B2143D00B83034 /* chunk.h */,
 				FA3A169822B2138E00B83034 /* common.h */,
 				FA3D2BDE22B359E00090C575 /* compiler.c */,
-				FA106CE022B499AF0086B876 /* object.h */,
-				FA106CE122B499AF0086B876 /* object.c */,
 				FA3D2BDD22B359E00090C575 /* compiler.h */,
 				FA3A16A022B21BCB00B83034 /* debug.c */,
 				FA3A169F22B21BCB00B83034 /* debug.h */,
 				FA3A169D22B216EE00B83034 /* memory.c */,
 				FA3A169C22B216EE00B83034 /* memory.h */,
+				FA106CE122B499AF0086B876 /* object.c */,
+				FA106CE022B499AF0086B876 /* object.h */,
 				FA3D2BE122B35A290090C575 /* scanner.c */,
 				FA3D2BE022B35A290090C575 /* scanner.h */,
+				FA106CFA22BC8DD70086B876 /* table.c */,
+				FA106CF922BC8DD70086B876 /* table.h */,
 				FA3A16A322B21D8E00B83034 /* value.c */,
 				FA3A16A222B21D8E00B83034 /* value.h */,
 				FA3D2BDB22B321F80090C575 /* vm.c */,
@@ -168,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA106CFB22BC8DD70086B876 /* table.c in Sources */,
 				FA3A16A422B21D8E00B83034 /* value.c in Sources */,
 				FA3A169222B2134500B83034 /* main.c in Sources */,
 				FA3A169E22B216EE00B83034 /* memory.c in Sources */,
