@@ -1,0 +1,52 @@
+fun makePoint(x, y) {
+  fun closure(method) {
+    if (method == "x") return x;
+    if (method == "y") return y;
+    print "unknown method " + method;
+  }
+
+  return closure;
+}
+
+print "--";
+
+var point = makePoint(2, 3);
+print point("x"); // "2".
+print point("y"); // "3".
+
+print "--";
+
+fun thrice(fn) {
+  for (var i = 1; i <= 3; i = i + 1) {
+    fn(i);
+  }
+}
+
+print "--";
+
+thrice(fun (a) {
+  print a;
+});
+
+print "--";
+
+fun takesAFun(func) {
+  for (var i = 1; i <= 3; i = i + 1) {
+    func(i);
+  }
+}
+
+takesAFun(fun(a) {
+    print a * 2;
+});
+
+var a = "global";
+{
+  fun showA() {
+    print a;
+  }
+
+  showA();
+  var a = "block";
+  showA();
+}
